@@ -88,7 +88,7 @@ class EmailAddressValidator(object):
 
     def validate_mx(self, domain_part):
         try:
-            dns.resolver.query(domain_part, 'MX')
+            dns.resolver.query(domain_part + '.', 'MX')
         except (dns.resolver.NXDOMAIN, dns.resolver.NoAnswer) as e:
             raise AssertionError(str(e)) from None
 

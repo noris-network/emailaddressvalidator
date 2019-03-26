@@ -3,7 +3,7 @@
 from setuptools import setup
 
 setup(name='emailaddressvalidator',
-		version='1.0',
+		version='1.1',
 		description='Little library for email format validation',
 		author='Roman Klesel',
 		author_email='roman.klesel@noris.de',
